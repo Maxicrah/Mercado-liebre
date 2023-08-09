@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/9ceae3d546.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="/img/logo-mercado-liebre.svg" alt="logo">
+            </div>
+            <form class="form" action="#" method="GET">
+                <input class="input" placeholder="Buscar productos, marcas y más" />
+                <button class="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="header__nav">
+
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="main__container ">
+            <form action="/register" method="post" class="register">
+
+                <input type="text" required id="nombre" name="nombre" placeholder="Nombre y apellido">
+
+                <input type="text" required  id="usuario" name="usuario" placeholder="Nombre de usuari@:">
+
+                <input type="email" required  id="email" name="email" placeholder="E-mail">
+
+                <h6>Fecha de nacimiento</h6>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required  placeholder="mm/dd/yy">
+
+                <input type="text" id="domicilio" name="domicilio" required  placeholder="Domicilio">
+
+                <div class="radiobuttons">
+                    <h6>Perfil de usuario</h6>
+                    <input type="radio" id="comprar" name="perfil-usuario" value="comprar">
+                    <label for="comprar">Comprador</label>
+
+                    <input type="radio" id="vender" name="perfil-usuario" value="vender">
+                    <label for="vender">Vendedor</label>
+                </div>
+
+
+                <div class="intereses">
+                    <h6>Intereses</h6>
+
+                    <div class="categoria">
+                        <input type="checkbox" id="electro" name="categorias" value="Electro">
+                        <label for="electro">Electro</label>
+                    </div>
+                    <div class="categoria"><input type="checkbox" id="moda" name="categorias" value="Moda">
+                        <label for="moda">Moda</label>
+                    </div>
+                    <div class="categoria"><input type="checkbox" id="hogar" name="categorias" value="Hogar">
+                        <label for="hogar">Hogar</label>
+                    </div>
+                    <div class="categoria"><input type="checkbox" id="jugueteria" name="categorias" value="Juguetería">
+                        <label for="jugueteria">Juguetería</label>
+                    </div>
+                    <div class="categoria"><input type="checkbox" id="vida-sana" name="categorias" value="Vida sana">
+                        <label for="vida-sana">Vida sana</label>
+                    </div>
+                </div>
+
+
+                <label for="foto">Foto de usuario:</label>
+                <input type="file" id="foto" name="foto">
+
+                <input type="password" required  id="contrasena" name="contrasena" placeholder="Contraseña">
+
+                <input type="password" required  id="confirmar-contrasena" name="confirmar-contrasena"
+                    placeholder="Confirmar contraseña">
+
+                <input type="submit" value="Enviar" class="send">
+                <input type="reset" value="Borrar" class="delete"> 
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>
