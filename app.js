@@ -4,10 +4,10 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-const PUERTO=3030;
+const port=process.env.PORT || 3001;
 
 
-app.listen( PUERTO ,()=> console.log("Server up 3030")  );
+app.listen( port ,()=> console.log("Server up 3030")  );
 
 app.get("/",(req,res)=>{
 
